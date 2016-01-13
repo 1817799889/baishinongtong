@@ -39,10 +39,7 @@ public class GoodsAgriculturesMachineryDAOImpl implements BaseDAO<GoodsAgricultu
 		return null;
 	}
 
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	//得到所有的商品信息
 	public List<GoodsAgriculturesMachinery> selectAll()
 	{

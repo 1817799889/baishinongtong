@@ -16,8 +16,7 @@ public interface BaseDAO<T> {
 	public int update(T t) throws SQLException ;
 	//查询一条记录
 	public User select(int id) throws SQLException ;
-	//查询多条记录
-	public List<User> selectList(Parameter p) throws SQLException ;
+	
 	
 
 }
