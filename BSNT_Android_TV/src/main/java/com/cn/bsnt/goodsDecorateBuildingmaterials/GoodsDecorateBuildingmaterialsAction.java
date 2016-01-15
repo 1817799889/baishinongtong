@@ -10,8 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dbutil.DBConntext;
 import net.sf.json.JSONObject;
-import dbUtil.DBConntext;
+
 
 @SuppressWarnings("serial")
 public class GoodsDecorateBuildingmaterialsAction extends HttpServlet {
@@ -30,7 +31,7 @@ public class GoodsDecorateBuildingmaterialsAction extends HttpServlet {
 		JSONObject json = new JSONObject();
 		List<Map<String, Object>> list_rtn = new ArrayList<Map<String,Object>>();
 		List<Map<String, Object>> list_picture = new ArrayList<Map<String,Object>>();
-		String goodsType=request.getParameter("");
+		String goodsType=request.getParameter("goodsType");
 		List<String> list= new ArrayList<String>();
 		list.add(goodsType);
 		list_rtn = db.queryBuildingMaterials();

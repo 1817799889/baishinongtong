@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.sf.json.JSONObject;
 import dbutil.DBConntext;
 
+@SuppressWarnings("serial")
 public class GoodsNourishingHealthAction extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -26,20 +27,18 @@ public class GoodsNourishingHealthAction extends HttpServlet{
 	// 设置编码格式
 	req.setCharacterEncoding("utf-8");
 	resp.setCharacterEncoding("utf-8");
-//	List<String> list = new ArrayList<String>();
-//	list.add("list");
 	DBConntext db = new DBConntext();
 	JSONObject json = new JSONObject();
 	String goodsType=req.getParameter("goodsType");//图片类型
 	
 	List<Map<String, Object>> list_rtn =new ArrayList<Map<String,Object>>();
-	List<Map<String, Object>> list_Picture =new ArrayList<Map<String,Object>>();		
+	List<Map<String, Object>> list_picture =new ArrayList<Map<String,Object>>();		
 
 	List<String> list=new ArrayList<String>();
 	
 	list.add(goodsType);
 	list_rtn=db.goodsNourishingHealth();
-	list_Picture=db.PictureType(list);
+	list_picture=db.PictureType(list);
 	String state = "-1";
 	if(list_rtn!=null && list_rtn.size()>0){
 		state="1";
@@ -51,7 +50,7 @@ public class GoodsNourishingHealthAction extends HttpServlet{
 
 	json.put("state", state);
 	json.put("nourishingHealthList", list_rtn);
-	json.put("list_Picture","list_Picture");
+	json.put("list_picture",list_picture);
 
 	resp.getWriter().write(json.toString());
 

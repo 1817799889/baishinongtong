@@ -35,13 +35,13 @@ public class GoodsWaterFountainAction extends HttpServlet{
 	String goodsType=req.getParameter("goodsType");//╫с©знд╣╣
 	
 	List<Map<String, Object>> list_rtn =new ArrayList<Map<String,Object>>();
-	List<Map<String, Object>> list_Picture =new ArrayList<Map<String,Object>>();		
+	List<Map<String, Object>> list_picture =new ArrayList<Map<String,Object>>();		
 
 	List<String> list=new ArrayList<String>();
 	
 	list.add(goodsType);
 	list_rtn=db.goodsWaterFountain();
-	list_Picture=db.PictureType(list);
+	list_picture=db.PictureType(list);
 	String state = "-1";
 	if(list_rtn!=null && list_rtn.size()>0){
 		state="1";
@@ -53,7 +53,7 @@ public class GoodsWaterFountainAction extends HttpServlet{
 
 	json.put("state", state);
 	json.put("tvList", list_rtn);
-	json.put("list_Picture","list_Picture");
+	json.put("list_picture",list_picture);
 
 	resp.getWriter().write(json.toString());
 

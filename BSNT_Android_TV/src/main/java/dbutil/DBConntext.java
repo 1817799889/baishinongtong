@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import dbUtil.dbUtil;
 /**
  * 
  * @author pc
@@ -401,6 +400,30 @@ public class DBConntext {
 		//牛奶饮品
 		public List<Map<String, Object>> queryMilkDrink() {
 			String sql = "select * from goods_milk_drink";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//母婴用品
+		public List<Map<String, Object>> goodsMotherBabyProduct() {
+			String sql = "select * from goods_mother_baby_product";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//滋补养生
+		public List<Map<String, Object>> goodsNourishingHealth() {
+			String sql = "select * from goods_nourishing_health";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//办公文具
+		public List<Map<String, Object>> queryOfficeStationary() {
+			String sql = "select * from goods_office_stationary";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//手机IPAD
+		public List<Map<String, Object>> goodsMobilePhone() {
+			String sql = "select * from goods_mobile_phone";
 			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
 			return list_rtn;
 		}

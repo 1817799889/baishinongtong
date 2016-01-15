@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.sf.json.JSONObject;
 import dbutil.DBConntext;
 
+@SuppressWarnings("serial")
 public class GoodsOtherElectricApplianceAction extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -51,7 +52,7 @@ public class GoodsOtherElectricApplianceAction extends HttpServlet{
 
 	json.put("state", state);
 	json.put("tvList", list_rtn);
-	json.put("list_Picture","list_Picture");
+	json.put("list_Picture",list_Picture);
 
 	resp.getWriter().write(json.toString());
 

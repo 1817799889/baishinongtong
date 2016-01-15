@@ -1,7 +1,7 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>SelectAgriculturesMachinery</servlet-name>
 		<servlet-class>com.cn.bsnt.servlet.SelectAgriculturesMachinery</servlet-class>
 	</servlet>
@@ -188,7 +188,7 @@
 	<servlet>
 		<servlet-name>SelectRiceCooker</servlet-name>
 		<servlet-class>com.cn.bsnt.servlet.SelectRiceCooker</servlet-class>
-	</servlet>
+	</servlet> -->
 	<!-- 酒品佳酿图片 -->>
      <servlet>
 		<servlet-name>goodsWine</servlet-name>
@@ -260,6 +260,14 @@
 		<servlet-name>goodsOtherElectricAppliance</servlet-name>
 		<servlet-class>com.cn.bsnt.goodsOtherElectricAppliance.GoodsOtherElectricApplianceAction</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>GoodsOfficeStationaryAction</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsOfficeStationary.GoodsOfficeStationaryAction</servlet-class>
+	</servlet>
+	
+	
+	
+	
 	<servlet>
     <servlet-name>GoodsAgriculturesMachineryAction</servlet-name>
     <servlet-class>com.cn.bsntAgriculturesMachinery.AgriculturesMachineryAction</servlet-class>
@@ -341,8 +349,8 @@
     <servlet-class>com.cn.bsnt.goodsHomeFurnishingArticles.GoodsHomeFurnishingArticlesAction</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>AoodsHomeTextilesAction</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsHomeTextiles.AoodsHomeTextilesAction</servlet-class>
+    <servlet-name>GoodsHomeTextilesAction</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsHomeTextiles.GoodsHomeTextilesAction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GoodsHomeTextilesAction</servlet-name>
@@ -372,11 +380,33 @@
     <servlet-name>GoodsMilkDrink</servlet-name>
     <servlet-class>com.cn.bsnt.goodsMilkDrink.GoodsMilkDrink</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>GoodsOfficeStationaryAction</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsOfficeStationary.GoodsOfficeStationaryAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsMobilePhoneAction</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsMobilePhoneAction.GoodsMobilePhoneAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsMotherBabyFoodAction</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsMotherBabyFoodAction.GoodsMotherBabyFoodAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsMotherBabyProductAction</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsMotherBabyProductAction.GoodsMotherBabyProductAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsNourishingHealthAction</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsNourishingHealthAction.GoodsNourishingHealthAction</servlet-class>
+  </servlet>
+  
+
 	
 	
 	
 	
-	<servlet-mapping>
+	<!-- <servlet-mapping>
 		<servlet-name>SelectAgriculturesMachinery</servlet-name>
 		<url-pattern>/allAgriculturesMachinery.do</url-pattern>
 	</servlet-mapping>
@@ -416,7 +446,7 @@
 		<servlet-name>SelectClangMovie</servlet-name>
 		<url-pattern>/SelectClangMovie</url-pattern>
 	</servlet-mapping>
-	<!-- allClangMovie.do -->
+	allClangMovie.do
 	<servlet-mapping>
 		<servlet-name>SelectCleaning</servlet-name>
 		<url-pattern>/allCleaning.do</url-pattern>
@@ -560,9 +590,9 @@
 	<servlet-mapping>
 		<servlet-name>SelectWine</servlet-name>
 		<url-pattern>/allWine.do</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
-<!-- 酒品佳酿图片 -->>
+<!-- 酒品佳酿图片 -->
     
 	<servlet-mapping>
 		<servlet-name>goodsWine</servlet-name>
@@ -658,6 +688,22 @@
 	<servlet-mapping>
 		<servlet-name>goodsOfficeStationary</servlet-name>
 		<url-pattern>/goodsOfficeStationary</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoodsNourishingHealthAction</servlet-name>
+		<url-pattern>/GoodsNourishingHealthAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoodsMotherBabyProductAction</servlet-name>
+		<url-pattern>/GoodsMotherBabyProductAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoodsMotherBabyFoodAction</servlet-name>
+		<url-pattern>/GoodsMotherBabyFoodAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoodsMobilePhoneAction</servlet-name>
+		<url-pattern>/GoodsMobilePhoneAction</url-pattern>
 	</servlet-mapping>
 	
 	<servlet-mapping>
@@ -773,6 +819,7 @@
     <servlet-name>GoodsMilkDrink</servlet-name>
     <url-pattern>/GoodsMilkDrink</url-pattern>
   </servlet-mapping>
+
 	
 
 </web-app>

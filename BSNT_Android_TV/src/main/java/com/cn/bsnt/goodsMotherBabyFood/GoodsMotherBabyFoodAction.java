@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.sf.json.JSONObject;
 import dbutil.DBConntext;
 
+@SuppressWarnings("serial")
 public class GoodsMotherBabyFoodAction extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -33,13 +34,13 @@ public class GoodsMotherBabyFoodAction extends HttpServlet{
 	String goodsType=req.getParameter("goodsType");//Õº∆¨¿‡–Õ
 	
 	List<Map<String, Object>> list_rtn =new ArrayList<Map<String,Object>>();
-	List<Map<String, Object>> list_Picture =new ArrayList<Map<String,Object>>();		
+	List<Map<String, Object>> list_picture =new ArrayList<Map<String,Object>>();		
 
 	List<String> list=new ArrayList<String>();
 	
 	list.add(goodsType);
-	list_rtn=db.goodsMotherBabyFood();
-	list_Picture=db.PictureType(list);
+	list_rtn=db.goodsMotherBabyProduct();
+	list_picture=db.PictureType(list);
 	String state = "-1";
 	if(list_rtn!=null && list_rtn.size()>0){
 		state="1";
@@ -50,8 +51,8 @@ public class GoodsMotherBabyFoodAction extends HttpServlet{
 
 
 	json.put("state", state);
-	json.put("motherBabyFoodList", list_rtn);
-	json.put("list_Picture","list_Picture");
+	json.put("motherBabyProductList", list_rtn);
+	json.put("list_picture",list_picture);
 
 	resp.getWriter().write(json.toString());
 
