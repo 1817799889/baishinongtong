@@ -72,11 +72,11 @@ public class SelectCamera extends HttpServlet {
 			result="{\"state\":\"-1\"}";
 		}
 		
-		@SuppressWarnings("deprecation")
-		JSONArray json=new JSONArray(result);
-		Writer writer=response.getWriter();
-		writer.write(result);
-		writer.flush();
+//		@SuppressWarnings("deprecation")
+//		JSONArray json=new JSONArray(result);
+//		Writer writer=response.getWriter();
+//		writer.write(result);
+//		writer.flush();
 	}
 
 }

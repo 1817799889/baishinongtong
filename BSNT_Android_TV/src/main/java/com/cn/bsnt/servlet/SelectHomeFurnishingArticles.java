@@ -56,10 +56,10 @@ public class SelectHomeFurnishingArticles extends HttpServlet{
 			result ="{\"state\":"+i+"}";
 		}
 		
-		JSONArray json = new JSONArray(result);
-		Writer writer = resp.getWriter();
-		writer.write(json.toString());
-		writer.close();
+//		JSONArray json = new JSONArray(result);
+//		Writer writer = resp.getWriter();
+//		writer.write(json.toString());
+//		writer.close();
 	}
 	
 	

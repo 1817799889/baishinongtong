@@ -72,7 +72,7 @@ public class SelectAgriculturesMachinery extends HttpServlet {
 		}
 		
 		@SuppressWarnings({ "deprecation", "unused" })
-		JSONArray json=new JSONArray(result);
+		//JSONArray json=new JSONArray(result);
 		Writer writer=response.getWriter();
 		writer.write(result);
 		writer.flush();

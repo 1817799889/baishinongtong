@@ -234,8 +234,9 @@
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>SelectClangMovie</servlet-name>
-		<url-pattern>/allClangMovie.do</url-pattern>
+		<url-pattern>/SelectClangMovie</url-pattern>
 	</servlet-mapping>
+	<!-- allClangMovie.do -->
 	<servlet-mapping>
 		<servlet-name>SelectCleaning</servlet-name>
 		<url-pattern>/allCleaning.do</url-pattern>

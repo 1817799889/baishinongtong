@@ -71,10 +71,10 @@ public class SelectBrandEndTable extends HttpServlet {
 		}
 		
 		
-		JSONArray json=new JSONArray(result);
-		Writer writer=response.getWriter();
-		writer.write(result);
-		writer.flush();
+//		JSONArray json=new JSONArray(result);
+//		Writer writer=response.getWriter();
+//		writer.write(result);
+//		writer.flush();
 		
 	}
 

@@ -73,11 +73,11 @@ public class SelectMotherBabyProduct extends HttpServlet {
 			result="{\"state\":\"-1\"}";
 		}
 		
-		JSONArray json=new JSONArray(result);
-		Writer writer=response.getWriter();
-		writer.write(result);
-		writer.flush();
-		writer.close();
+//		JSONArray json=new JSONArray(result);
+//		Writer writer=response.getWriter();
+//		writer.write(result);
+//		writer.flush();
+//		writer.close();
 	}
 
 }

@@ -73,7 +73,7 @@ public class SelectCameraMonitored extends HttpServlet {
 		}
 		
 		@SuppressWarnings("deprecation")
-		JSONArray json=new JSONArray(result);
+		//JSONArray json=new JSONArray(result);
 		Writer writer=response.getWriter();
 		writer.write(result);
 		writer.flush();

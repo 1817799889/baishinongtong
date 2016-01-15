@@ -51,10 +51,10 @@ public class SelectGrainOilTaste extends HttpServlet{
     			result = "{\"state\":\"-1\"}";
     		}
     		
-    		JSONArray json = new JSONArray(result);
-    		
-    		Writer writer = resp.getWriter();
-    		writer.write(result);
-    		writer.close();
+//    		JSONArray json = new JSONArray(result);
+//    		
+//    		Writer writer = resp.getWriter();
+//    		writer.write(result);
+//    		writer.close();
         }
 }
