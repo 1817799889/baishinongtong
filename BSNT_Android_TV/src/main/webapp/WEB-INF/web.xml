@@ -1,6 +1,3 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
@@ -192,6 +189,77 @@
 		<servlet-name>SelectRiceCooker</servlet-name>
 		<servlet-class>com.cn.bsnt.servlet.SelectRiceCooker</servlet-class>
 	</servlet>
+	<!-- 酒品佳酿图片 -->>
+     <servlet>
+		<servlet-name>goodsWine</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsWine.GoodsWineAction</servlet-class>
+	</servlet>
+	<!-- 饮水机图片 -->
+	 <servlet>
+		<servlet-name>goodsWaterFountain</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsWaterFountain.GoodsWaterFountainAction</servlet-class>
+	</servlet>
+		<!-- 洗衣机图片-->
+	<servlet>
+		<servlet-name>goodsWasher</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsWasher.GoodsWasherAction</servlet-class>
+	 </servlet> 
+	<!-- 视频播放图片 -->
+	<servlet>
+		<servlet-name>goodsVideoPlayOrgan</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsVideoPlayOrgan.GoodsVideoPlayOrganAction</servlet-class>
+	</servlet>
+	 <!-- 电视/ 图片 -->
+	<servlet>
+		<servlet-name>goodsTv</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsTv.GoodsTvAction</servlet-class>
+	</servlet>
+	 <!-- 茶具酒具图片 -->
+	<servlet>
+		<servlet-name>goodsTeaWine</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsTeaWine.GoodsTeaWineAction</servlet-class>
+	</servlet>
+	 <!-- 茗茶图片 -->
+	<servlet>
+		<servlet-name>goodsTea</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsTea.GoodsTeaAction</servlet-class>
+	</servlet>
+	 <!-- 体育用品/图片 -->
+	<servlet>
+		<servlet-name>goodsSportGoods</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsSportGoods.GoodsSportGoodsAction</servlet-class>
+	</servlet>
+	
+	 <!-- 零食、图片 -->
+	<servlet>
+		<servlet-name>goodsSnack</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsSnack.GoodsSnackAction</servlet-class>
+	</servlet>
+	 <!-- 智能设备/图片 -->
+	<servlet>
+		<servlet-name>goodsSmartDevice</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsSmartDevice.GoodsSmartDeviceAction</servlet-class>
+	</servlet>
+	 <!--鞋靴   参数   及图片 -->
+	<servlet>
+		<servlet-name>goodsShoes</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsShoes.GoodsShoesAction</servlet-class>
+	</servlet>
+		 <!--电饭煲   参数   及图片 -->
+	<servlet>
+		<servlet-name>goodsRiceCooker</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsRiceCooker.GoodsRiceCookerAction</servlet-class>
+	</servlet>
+	 <!--户外用品   参数   及图片 -->
+	<servlet>
+		<servlet-name>goodsOutdoorGoods</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsOutdoorGoods.GoodsOutdoorGoodsAction</servlet-class>
+	</servlet>
+	 <!--其他电器   参数   及图片 -->
+	<servlet>
+		<servlet-name>goodsOtherElectricAppliance</servlet-name>
+		<servlet-class>com.cn.bsnt.goodsOtherElectricAppliance.GoodsOtherElectricApplianceAction</servlet-class>
+	</servlet>
 	
 	
 	
@@ -382,5 +450,96 @@
 		<url-pattern>/allWine.do</url-pattern>
 	</servlet-mapping>
 	
+<!-- 酒品佳酿图片 -->>
+    
+	<servlet-mapping>
+		<servlet-name>goodsWine</servlet-name>
+		<url-pattern>/goodsWine</url-pattern>
+	</servlet-mapping>	
+ 
+	<!-- 饮水机图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsWaterFountain</servlet-name>
+		<url-pattern>/goodsWaterFountain</url-pattern>
+	</servlet-mapping>	
+	
+	<!-- 洗衣机图片-->
+	
+	<servlet-mapping>
+		<servlet-name>goodsWasher</servlet-name>
+		<url-pattern>/goodsWasher</url-pattern>
+	</servlet-mapping>	
+	
+	 <!-- 视频播放图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsVideoPlayOrgan</servlet-name>
+		<url-pattern>/goodsVideoPlayOrgan</url-pattern>
+	</servlet-mapping>	
+
+	 <!-- 电视/ 图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsTv</servlet-name>
+		<url-pattern>/goodsTv</url-pattern>
+	</servlet-mapping>	
+	
+	 <!-- 茶具酒具图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsTeaWine</servlet-name>
+		<url-pattern>/goodsTeaWine</url-pattern>
+	</servlet-mapping>
+	
+	 <!-- 茗茶图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsTea</servlet-name>
+		<url-pattern>/goodsTea</url-pattern>
+	</servlet-mapping>
+	
+	 <!-- 体育用品/图片 -->
+	<servlet-mapping>
+		<servlet-name>goodsSportGoods</servlet-name>
+		<url-pattern>/goodsSportGoods</url-pattern>
+	</servlet-mapping>
+	
+	 <!-- 零食、图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsSnack</servlet-name>
+		<url-pattern>/goodsSnack</url-pattern>
+	</servlet-mapping>
+	 <!-- 智能设备/图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsSmartDevice</servlet-name>
+		<url-pattern>/goodsSmartDevice</url-pattern>
+	</servlet-mapping>
+	 <!--鞋靴   参数   及图片 -->
+
+	<servlet-mapping>
+		<servlet-name>goodsShoes</servlet-name>
+		<url-pattern>/goodsShoes</url-pattern>
+	</servlet-mapping>
+	 <!--电饭煲   参数   及图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsRiceCooker</servlet-name>
+		<url-pattern>/goodsRiceCooker</url-pattern>
+	</servlet-mapping>
+	 <!--户外用品   参数   及图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsOutdoorGoods</servlet-name>
+		<url-pattern>/goodsOutdoorGoods</url-pattern>
+	</servlet-mapping>
+	 <!--其他电器   参数   及图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsOtherElectricAppliance</servlet-name>
+		<url-pattern>/goodsOtherElectricAppliance</url-pattern>
+	</servlet-mapping>
 
 </web-app>
