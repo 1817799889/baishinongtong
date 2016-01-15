@@ -3,6 +3,8 @@ package dbutil;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import dbUtil.dbUtil;
 /**
  * 
  * @author pc
@@ -231,4 +233,175 @@ public class DBConntext {
 		List<Map<String, Object>> list_rtn = dbUtil.query(sql);
 		return list_rtn;
   }
+	
+	
+	
+	//查询农资机械
+		public List<Map<String, Object>> queryMachinery() {
+			String sql = "select * from goods_agricultures_machinery";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//查询所有图片
+		public List<Map<String, Object>> queryPicture(List<String> list) {
+			String sql = "select * from goods_picture where goods_type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql, list);
+			return list_rtn;
+		}
+		//种子化肥
+		public List<Map<String, Object>> queryUseArticles() {
+			String sql = "select * from goods_agricultures_use_articles";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//农耕用具
+		public List<Map<String, Object>> queryUseTools() {
+			String sql = "select * from goods_agricultures_use_tools";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//农用三轮
+		public List<Map<String, Object>> queryUseTricycle() {
+			String sql = "select * from goods_agricultures_use_tricycle";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//汽车用品
+		public List<Map<String, Object>> queryAutoAppliance() {
+			String sql = "select * from goods_auto_appliance";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//床柜沙发
+		public List<Map<String, Object>> queryBoxSpringSuite() {
+			String sql = "select * from goods_box_spring_suite";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//桌椅茶几
+		public List<Map<String, Object>> queryBrandEndTable() {
+			String sql = "select * from goods_brand_end_table";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//相机DV
+		public List<Map<String, Object>> queryCamera() {
+			String sql = "select * from goods_camera";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//摄像监控
+		public List<Map<String, Object>> queryCameraMonitored() {
+			String sql = "select * from goods_camera_monitored";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//音响影视
+		public List<Map<String, Object>> queryClangMovie() {
+			String sql = "select * from goods_clang_movie";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//个人洗护
+		public List<Map<String, Object>> queryCleaning(List<String> list) {
+			String sql = "select * from goods_cleaning where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql, list);
+			return list_rtn;
+		}
+		//电脑平板
+		public List<Map<String, Object>> queryComputer() {
+			String sql = "select * from goods_computer";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//母婴服饰
+		public List<Map<String, Object>> queryCostume(List<String> list) {
+			String sql = "select * from goods_costume where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql,list);
+			return list_rtn;
+		}
+		//装潢建材
+		public List<Map<String, Object>> queryBuildingMaterials() {
+			String sql = "select * from goods_decorate_building_materials";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//电脑配件
+		public List<Map<String, Object>> queryDigiyalAccessories(List<String> list) {
+			String sql = "select * from goods_digiyal_accessories where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql,list);
+			return list_rtn;
+		}
+		//门窗装饰
+		public List<Map<String, Object>> queryDoorWindows() {
+			String sql = "select * from goods_door_windows";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//早教启蒙
+		public List<Map<String, Object>> queryEducationEnlightenment() {
+			String sql = "select * from goods_early_education_enlightenment";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//健身器材
+		public List<Map<String, Object>> queryFitnessEquipment() {
+			String sql = "select * from goods_fitness_equipment";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//粮油调味
+		public List<Map<String, Object>> queryGrainOilTaste() {
+			String sql = "select * from goods_home_furnishing_articles";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//居家摆设
+		public List<Map<String, Object>> queryHomeFurnishingArticles() {
+			String sql = "select * from goods_home_furnishing_articles";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//家纺用品
+		public List<Map<String, Object>> queryHomeTextiles(List<String> list) {
+			String sql = "select * from goods_home_textiles where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql, list);
+			return list_rtn;
+		}
+		//冰箱冰柜
+		public List<Map<String, Object>> queryIcebox() {
+			String sql = "select * from goods_icebox";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//厨房餐具
+		public List<Map<String, Object>> queryKitchen(List<String> list) {
+			String sql = "select * from goods_kitchen where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql, list);
+			return list_rtn;
+		}
+		//休闲箱包
+		public List<Map<String, Object>> queryLuggage(List<String> list) {
+			String sql = "select * from goods_luggage where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql, list);
+			return list_rtn;
+		}
+		//血压仪器
+		public List<Map<String, Object>> queryMedicacare(List<String> list) {
+			String sql = "select * from goods_medica_care where type=?";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql, list);
+			return list_rtn;
+		}
+		//微波炉具
+		public List<Map<String, Object>> queryMicrowaveOven() {
+			String sql = "select * from goods_microwave_oven";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
+		//牛奶饮品
+		public List<Map<String, Object>> queryMilkDrink() {
+			String sql = "select * from goods_milk_drink";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+			return list_rtn;
+		}
 }
