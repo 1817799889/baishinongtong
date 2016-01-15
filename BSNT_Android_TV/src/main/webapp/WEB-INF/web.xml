@@ -540,6 +540,13 @@
 	<servlet-mapping>
 		<servlet-name>goodsOtherElectricAppliance</servlet-name>
 		<url-pattern>/goodsOtherElectricAppliance</url-pattern>
+	</servlet-mapping> 
+	<!--办公文具   参数   及图片 -->
+	
+	<servlet-mapping>
+		<servlet-name>goodsOfficeStationary</servlet-name>
+		<url-pattern>/goodsOfficeStationary</url-pattern>
 	</servlet-mapping>
+	
 
 </web-app>

@@ -223,4 +223,12 @@ public class DBConntext {
 		List<Map<String, Object>> list_rtn = dbUtil.query(sql);
 		return list_rtn;
   }
+	/**
+	 * 其他电器（查询）
+	 */
+	public List<Map<String, Object>> goodsOfficeStationary() {
+		String sql = "SELECT * from goods_office_stationary";
+		List<Map<String, Object>> list_rtn = dbUtil.query(sql);
+		return list_rtn;
+  }
 }
