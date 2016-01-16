@@ -1,4 +1,4 @@
-package com.cn.bsnt.searche;
+package com.cn.bsnt.search;
 
 import java.io.IOException;
 import java.util.ArrayList;
