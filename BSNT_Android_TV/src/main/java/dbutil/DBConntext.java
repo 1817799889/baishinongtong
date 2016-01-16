@@ -470,4 +470,13 @@ public class DBConntext {
 		List<Map<String, Object>> list_rtn = dbUtil.query(sql);
 		return list_rtn;
 	}
+	
+	//特价商品和搜索功能
+	// 手机IPAD
+		public List<Map<String, Object>> selectGoodsMobilePhone(List<String> list) {
+			String sql = "select * from goods_mobile_phone WHERE NAME LIKE'%?%'";
+			List<Map<String, Object>> list_rtn = dbUtil.query(sql,list);
+			return list_rtn;
+		}
+	
 }
