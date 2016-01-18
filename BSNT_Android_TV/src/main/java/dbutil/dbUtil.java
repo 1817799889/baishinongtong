@@ -140,6 +140,37 @@ public class dbUtil {
 		close(con,ps,rs);
 		return list_rtn;
 	}
+	//通过商品Id和类型查询商品
+		public static List<Map<String,Object>> query(String sql,int Id,String Type){
+			List<Map<String,Object>> list_rtn = new ArrayList<Map<String,Object>>();
+			
+			Connection con = getConnection();
+			PreparedStatement ps = null;
+			ResultSet rs = null;
+			try {
+				ps = con.prepareStatement(sql);
+				ps.setInt(1, Id);
+				ps.setString(2, Type);
+				
+				rs = ps.executeQuery();
+				while(rs.next()){
+					ResultSetMetaData rsmd = rs.getMetaData();
+					int column_count = rsmd.getColumnCount();//得到列的个数
+					Map<String,Object> map = new HashMap<String,Object>();
+					for(int i = 1 ; i <= column_count ; i++){
+						String column_name = rsmd.getColumnName(i);//列的名称
+						String column_value = rs.getString(i);//列的值
+						map.put(column_name, column_value);
+					}
+					list_rtn.add(map);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			close(con,ps,rs);
+			return list_rtn;
+		}
+
 	//插入数据
 	public static int insert(String sql,List<String> params){
 		int result = 0;
