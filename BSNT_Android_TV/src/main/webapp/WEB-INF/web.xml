@@ -400,6 +400,10 @@
     <servlet-name>GoodsSearch</servlet-name>
     <servlet-class>com.cn.bsnt.search.GoodsSearch</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>GoodsReferCan</servlet-name>
+    <servlet-class>com.cn.bsnt.goodsQueryCan.GoodsReferCan</servlet-class>
+  </servlet>
   
 
 	
@@ -818,6 +822,10 @@
   <servlet-mapping>
     <servlet-name>GoodsSearch</servlet-name>
     <url-pattern>/GoodsSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsReferCan</servlet-name>
+    <url-pattern>/GoodsReferCan</url-pattern>
   </servlet-mapping>
 
 	

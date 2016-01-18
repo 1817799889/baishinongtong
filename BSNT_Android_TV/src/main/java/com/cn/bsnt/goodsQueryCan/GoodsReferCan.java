@@ -30,9 +30,9 @@ public class GoodsReferCan extends HttpServlet {
 	        resp.setCharacterEncoding("UTF_8");
 	        DBConntextCan  zpl=new DBConntextCan();
 	        JSONObject json=new JSONObject();
-	        String Id=req.getParameter("Id");
+	        String Id=req.getParameter("id");
 	        int id=Integer.parseInt(Id);
-	        String Type=req.getParameter("Type");
+	        String Type=req.getParameter("goodsType");
 	        List<Map<String,Object>> list_goods=new ArrayList<Map<String,Object>>();
 	  
 	    	if (Type=="µçÊÓ»ú") {
@@ -228,44 +228,20 @@ public class GoodsReferCan extends HttpServlet {
 	    	
 	    	List<Map<String, Object>> list_picture = new ArrayList<Map<String,Object>>();
 	    	list_picture=zpl.Picture(id, Type);
-	    	String send="-1";
+	    	String state="-1";
 	    	if (list_goods != null && list_goods.size()>0) {
-	    		send = "1";
+	    		state = "1";
 			}else {
-				send = "0";
+				state = "0";
 			}	
 	    	
-	     json.put("send", send);
+	     json.put("state", state);
 	     json.put("list_type", list_goods);
 	     json.put("list_picture", list_picture);
 	     resp.getWriter().write(json.toString());		
 	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
-	    		
+		
+
 	    		
 	    }
 }
