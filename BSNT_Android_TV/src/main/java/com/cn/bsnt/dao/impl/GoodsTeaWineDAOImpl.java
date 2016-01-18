@@ -75,8 +75,6 @@ public class GoodsTeaWineDAOImpl implements BaseDAO<GoodsTeaWine>{
 		    gtw.setTerTablewareProcess(rs.getString("TEA_TABLEWARE_PROCESS"));
 		    gtw.setGlossKind(rs.getString("GLOSS_KIND"));
 		    
-		    
-		
 		}
 		return goodsTeaWineList;
 		}

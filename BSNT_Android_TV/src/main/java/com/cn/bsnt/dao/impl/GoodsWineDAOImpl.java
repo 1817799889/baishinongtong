@@ -7,11 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.omg.Dynamic.Parameter;
+
 
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
-import com.cn.bsnt.model.GoodsWaterFountain;
+
 import com.cn.bsnt.model.GoodsWine;
 
 
@@ -37,15 +37,7 @@ public class GoodsWineDAOImpl implements BaseDAO<GoodsWine>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
    public List<GoodsWine> selectAll() throws SQLException{
 	       sql="select * from goods_wine";
 	       conn=ConnectionManager.getConnection();
