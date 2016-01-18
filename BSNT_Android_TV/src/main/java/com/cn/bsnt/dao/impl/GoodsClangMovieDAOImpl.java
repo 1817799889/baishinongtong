@@ -15,7 +15,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsClangMovie;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsClangMovieDAOImpl implements BaseDAO<GoodsClangMovie>{
 	private Connection  conn = null;
@@ -38,15 +38,7 @@ public class GoodsClangMovieDAOImpl implements BaseDAO<GoodsClangMovie>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 //    public List<GoodsClangMovie> selectAll() throws SQLException{
 //		sql="select * from goods_clang_movie";
 //		conn=ConnectionManager.getConnection();

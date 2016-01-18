@@ -12,7 +12,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsCameraMonitored;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsCameraMonitoredDAOImpl implements BaseDAO<GoodsCameraMonitored>{
 
@@ -34,15 +34,6 @@ public class GoodsCameraMonitoredDAOImpl implements BaseDAO<GoodsCameraMonitored
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	//得到所有商品信息
 	public List<GoodsCameraMonitored> selectAll(){
 		List<GoodsCameraMonitored> cameraMonitoredList=new ArrayList<GoodsCameraMonitored>();

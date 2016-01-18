@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.omg.Dynamic.Parameter;
 
-import com.cn.bsnt.model.User;
+
 
 public interface BaseDAO<T> {
 	//增加一条记录
@@ -14,8 +14,7 @@ public interface BaseDAO<T> {
 	public int delete(int id) throws SQLException;
 	//修改一条记录
 	public int update(T t) throws SQLException ;
-	//查询一条记录
-	public User select(int id) throws SQLException ;
+	
 	
 	
 

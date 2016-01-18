@@ -12,7 +12,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsWasher;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsWasherDAOImpl implements BaseDAO<GoodsWasher> {
 	private Connection  conn = null;
@@ -36,10 +36,7 @@ public class GoodsWasherDAOImpl implements BaseDAO<GoodsWasher> {
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	public List<GoodsWasher> selectAll() throws SQLException {
 		sql= "select * from goods_washer";

@@ -12,7 +12,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsMedicacare;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsMedicacareDAOImpl implements BaseDAO<GoodsMedicacare>{
 
@@ -34,15 +34,7 @@ public class GoodsMedicacareDAOImpl implements BaseDAO<GoodsMedicacare>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	public List<GoodsMedicacare> selectAll(String type){
 		List<GoodsMedicacare> medicacareList=new ArrayList<GoodsMedicacare>();
 		conn=ConnectionManager.getConnection();

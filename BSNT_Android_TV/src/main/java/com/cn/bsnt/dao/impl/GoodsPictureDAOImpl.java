@@ -13,7 +13,7 @@ import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsAgriculturesUseTools;
 import com.cn.bsnt.model.GoodsPicture;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsPictureDAOImpl implements BaseDAO<GoodsPicture>{
 	
@@ -36,10 +36,7 @@ public class GoodsPictureDAOImpl implements BaseDAO<GoodsPicture>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	
 	public List<GoodsPicture> selectByGoodsIdAndGoodsType(int goodsId,String GoodsType){
 		List<GoodsPicture> goodsPictureList=new ArrayList<GoodsPicture>();

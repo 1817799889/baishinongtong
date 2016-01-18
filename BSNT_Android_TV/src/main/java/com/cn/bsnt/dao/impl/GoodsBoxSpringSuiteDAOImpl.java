@@ -12,7 +12,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsBoxSpringSuite;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsBoxSpringSuiteDAOImpl implements BaseDAO<GoodsBoxSpringSuite>{
 
@@ -38,15 +38,7 @@ public class GoodsBoxSpringSuiteDAOImpl implements BaseDAO<GoodsBoxSpringSuite>{
 	}
 
 	
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	//得到所有商品信息
 	public List<GoodsBoxSpringSuite> selectAll() throws SQLException{
 		conn = ConnectionManager.getConnection();

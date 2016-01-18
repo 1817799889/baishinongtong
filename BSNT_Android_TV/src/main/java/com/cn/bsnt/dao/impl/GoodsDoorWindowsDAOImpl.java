@@ -12,7 +12,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsDoorWindows;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsDoorWindowsDAOImpl implements BaseDAO<GoodsDoorWindows>{
 
@@ -34,15 +34,7 @@ public class GoodsDoorWindowsDAOImpl implements BaseDAO<GoodsDoorWindows>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	public List<GoodsDoorWindows> selectAll(){
 		List<GoodsDoorWindows> doorWindowsList=new ArrayList<GoodsDoorWindows>();
 		conn=ConnectionManager.getConnection();

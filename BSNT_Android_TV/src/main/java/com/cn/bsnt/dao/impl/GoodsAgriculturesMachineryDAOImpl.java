@@ -12,7 +12,7 @@ import org.omg.Dynamic.Parameter;
 import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsAgriculturesMachinery;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsAgriculturesMachineryDAOImpl implements BaseDAO<GoodsAgriculturesMachinery>{
 
@@ -34,11 +34,7 @@ public class GoodsAgriculturesMachineryDAOImpl implements BaseDAO<GoodsAgricultu
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 	
 	//得到所有的商品信息
 	public List<GoodsAgriculturesMachinery> selectAll()

@@ -13,7 +13,7 @@ import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsHomeTextiles;
 import com.cn.bsnt.model.GoodsKitchen;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsHomeTextilesDAOImpl implements BaseDAO<GoodsHomeTextiles>{
 	private Connection  conn = null;
@@ -38,15 +38,7 @@ public class GoodsHomeTextilesDAOImpl implements BaseDAO<GoodsHomeTextiles>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	
 	public List<GoodsHomeTextiles> selectAll(String type) throws SQLException{
 		conn = ConnectionManager.getConnection();

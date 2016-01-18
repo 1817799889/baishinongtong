@@ -13,7 +13,7 @@ import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsIcebox;
 import com.cn.bsnt.model.GoodsWasher;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsIceboxDAOImpl implements BaseDAO<GoodsIcebox>{
         
@@ -38,15 +38,7 @@ public class GoodsIceboxDAOImpl implements BaseDAO<GoodsIcebox>{
 		return 0;
 	}
 
-	public User select(int id) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
      public List<GoodsIcebox> selectAll() throws SQLException{
 		sql="select * from GoodsIcebox";
 		conn=ConnectionManager.getConnection();

@@ -13,7 +13,7 @@ import com.cn.bsnt.dao.BaseDAO;
 import com.cn.bsnt.dbhelper.ConnectionManager;
 import com.cn.bsnt.model.GoodsWaterFountain;
 import com.cn.bsnt.model.GoodsWine;
-import com.cn.bsnt.model.User;
+
 
 public class GoodsWineDAOImpl implements BaseDAO<GoodsWine>{
 	private Connection  conn = null;
