@@ -189,7 +189,7 @@
 		<servlet-name>SelectRiceCooker</servlet-name>
 		<servlet-class>com.cn.bsnt.servlet.SelectRiceCooker</servlet-class>
 	</servlet> -->
-	<!-- 酒品佳酿图片 -->>
+	<!-- 酒品佳酿图片 -->
      <servlet>
 		<servlet-name>goodsWine</servlet-name>
 		<servlet-class>com.cn.bsnt.goodsWine.GoodsWineAction</servlet-class>
@@ -270,7 +270,7 @@
 	
 	<servlet>
     <servlet-name>GoodsAgriculturesMachineryAction</servlet-name>
-    <servlet-class>com.cn.bsntAgriculturesMachinery.AgriculturesMachineryAction</servlet-class>
+    <servlet-class>com.cn.bsnt.goodsAgriculturesMachinery.GoodsAgriculturesMachineryAction</servlet-class>
   </servlet>
    <servlet>
     <servlet-name>GoodsAgriculturesUseArticlesAction</servlet-name>
@@ -334,7 +334,7 @@
   </servlet>
   <servlet>
     <servlet-name>GoodsEarlyEducationEnlightenment</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsEarlyEducationEnlightenment.GoodsEarlyEducationEnlightenment</servlet-class>
+    <servlet-class>com.cn.bsnt.goodsEarlyEducationEnlightenment.GoodsEarlyEducationEnlightenmentAction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GoodsFitnessEquipmentAction</servlet-name>
@@ -347,10 +347,6 @@
   <servlet>
     <servlet-name>GoodsHomeFurnishingArticlesAction</servlet-name>
     <servlet-class>com.cn.bsnt.goodsHomeFurnishingArticles.GoodsHomeFurnishingArticlesAction</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>GoodsHomeTextilesAction</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsHomeTextiles.GoodsHomeTextilesAction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GoodsHomeTextilesAction</servlet-name>
@@ -386,19 +382,23 @@
   </servlet>
   <servlet>
     <servlet-name>GoodsMobilePhoneAction</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsMobilePhoneAction.GoodsMobilePhoneAction</servlet-class>
+    <servlet-class>com.cn.bsnt.goodsMobilePhone.GoodsMobilePhoneAction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GoodsMotherBabyFoodAction</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsMotherBabyFoodAction.GoodsMotherBabyFoodAction</servlet-class>
+    <servlet-class>com.cn.bsnt.goodsMotherBabyFood.GoodsMotherBabyFoodAction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GoodsMotherBabyProductAction</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsMotherBabyProductAction.GoodsMotherBabyProductAction</servlet-class>
+    <servlet-class>com.cn.bsnt.goodsMotherBabyProduct.GoodsMotherBabyProductAction</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>GoodsNourishingHealthAction</servlet-name>
-    <servlet-class>com.cn.bsnt.goodsNourishingHealthAction.GoodsNourishingHealthAction</servlet-class>
+    <servlet-class>com.cn.bsnt.goodsNourishingHealth.GoodsNourishingHealthAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsSearch</servlet-name>
+    <servlet-class>com.cn.bsnt.search.GoodsSearch</servlet-class>
   </servlet>
   
 
@@ -788,10 +788,6 @@
     <url-pattern>/GoodsHomeFurnishingArticlesAction</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>AoodsHomeTextilesAction</servlet-name>
-    <url-pattern>/AoodsHomeTextilesAction</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
     <servlet-name>GoodsHomeTextilesAction</servlet-name>
     <url-pattern>/GoodsHomeTextilesAction</url-pattern>
   </servlet-mapping>
@@ -818,6 +814,10 @@
   <servlet-mapping>
     <servlet-name>GoodsMilkDrink</servlet-name>
     <url-pattern>/GoodsMilkDrink</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsSearch</servlet-name>
+    <url-pattern>/GoodsSearch</url-pattern>
   </servlet-mapping>
 
 	

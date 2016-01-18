@@ -51,6 +51,7 @@ public class GoodsCameraAction extends HttpServlet {
 		List<Map<String, Object>> list_rtn = new ArrayList<Map<String,Object>>();
 		List<Map<String, Object>> list_picture = new ArrayList<Map<String,Object>>();
 		String goodsType=request.getParameter("goodsType");
+		
 		List<String> list= new ArrayList<String>();
 		list.add(goodsType);
 		list_rtn = db.queryCamera();
@@ -62,7 +63,7 @@ public class GoodsCameraAction extends HttpServlet {
 			state = "0";
 		}
 		json.put("state", state);
-		json.put("CameraList", list_rtn);
+		json.put("cameraList", list_rtn);
 		json.put("list_picture", list_picture);
 		response.getWriter().write(json.toString());
 	}

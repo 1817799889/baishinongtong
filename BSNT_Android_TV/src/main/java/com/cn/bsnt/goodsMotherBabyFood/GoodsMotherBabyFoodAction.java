@@ -51,7 +51,7 @@ public class GoodsMotherBabyFoodAction extends HttpServlet{
 
 
 	json.put("state", state);
-	json.put("motherBabyProductList", list_rtn);
+	json.put("motherBabyFoodList", list_rtn);
 	json.put("list_picture",list_picture);
 
 	resp.getWriter().write(json.toString());

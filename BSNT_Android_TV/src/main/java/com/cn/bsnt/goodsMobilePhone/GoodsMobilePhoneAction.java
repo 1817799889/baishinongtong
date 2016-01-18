@@ -33,6 +33,7 @@ public class GoodsMobilePhoneAction extends HttpServlet{
 	JSONObject json = new JSONObject();
 	String goodsType=req.getParameter("goodsType");//Õº∆¨¿‡–Õ
 	
+	
 	List<Map<String, Object>> list_rtn =new ArrayList<Map<String,Object>>();
 	List<Map<String, Object>> list_picture =new ArrayList<Map<String,Object>>();		
 

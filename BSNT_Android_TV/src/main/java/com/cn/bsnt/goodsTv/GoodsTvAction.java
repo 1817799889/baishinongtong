@@ -31,8 +31,8 @@ public class GoodsTvAction extends HttpServlet{
 //	list.add("list");
 	DBConntext db = new DBConntext();
 	JSONObject json = new JSONObject();
-	String goodsType=req.getParameter("goodsType");//接口文档
-	
+	//String goodsType=req.getParameter("goodsType");//接口文档
+	String goodsType= "电视机";
 	List<Map<String, Object>> list_rtn =new ArrayList<Map<String,Object>>();
 	List<Map<String, Object>> list_picture =new ArrayList<Map<String,Object>>();		
 

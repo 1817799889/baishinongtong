@@ -51,8 +51,8 @@ public class GoodsOtherElectricApplianceAction extends HttpServlet{
 
 
 	json.put("state", state);
-	json.put("tvList", list_rtn);
-	json.put("list_Picture",list_Picture);
+	json.put("otherElectricApplianceList", list_rtn);
+	json.put("list_picture",list_Picture);
 
 	resp.getWriter().write(json.toString());
 

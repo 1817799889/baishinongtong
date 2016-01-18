@@ -51,7 +51,7 @@ public class GoodsVideoPlayOrganAction extends HttpServlet{
 
 
 	json.put("state", state);
-	json.put("tvList", list_rtn);
+	json.put("videoPlayOrganList", list_rtn);
 	json.put("list_picture",list_picture);
 
 	resp.getWriter().write(json.toString());

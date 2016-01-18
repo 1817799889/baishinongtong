@@ -33,7 +33,7 @@ public class GoodsWaterFountainAction extends HttpServlet{
 	DBConntext db = new DBConntext();
 	JSONObject json = new JSONObject();
 	String goodsType=req.getParameter("goodsType");//╫с©знд╣╣
-	
+
 	List<Map<String, Object>> list_rtn =new ArrayList<Map<String,Object>>();
 	List<Map<String, Object>> list_picture =new ArrayList<Map<String,Object>>();		
 
@@ -52,7 +52,7 @@ public class GoodsWaterFountainAction extends HttpServlet{
 
 
 	json.put("state", state);
-	json.put("tvList", list_rtn);
+	json.put("waterFountainList", list_rtn);
 	json.put("list_picture",list_picture);
 
 	resp.getWriter().write(json.toString());
