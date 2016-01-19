@@ -333,7 +333,7 @@
     <servlet-class>com.cn.bsnt.goodsDoorWindows.GoodsDoorWindowsAction</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>GoodsEarlyEducationEnlightenment</servlet-name>
+    <servlet-name>GoodsEarlyEducationEnlightenmentAction</servlet-name>
     <servlet-class>com.cn.bsnt.goodsEarlyEducationEnlightenment.GoodsEarlyEducationEnlightenmentAction</servlet-class>
   </servlet>
   <servlet>
@@ -690,8 +690,8 @@
 	<!--办公文具   参数   及图片 -->
 	
 	<servlet-mapping>
-		<servlet-name>goodsOfficeStationary</servlet-name>
-		<url-pattern>/goodsOfficeStationary</url-pattern>
+		<servlet-name>GoodsOfficeStationaryAction</servlet-name>
+		<url-pattern>/GoodsOfficeStationaryAction</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>GoodsNourishingHealthAction</servlet-name>

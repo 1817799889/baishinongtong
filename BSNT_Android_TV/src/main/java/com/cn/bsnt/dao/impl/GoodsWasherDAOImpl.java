@@ -75,11 +75,7 @@ public class GoodsWasherDAOImpl implements BaseDAO<GoodsWasher> {
 		return goodsWasherList;
 	}
 
-	public List<User> selectList(Parameter p) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 
 
 }

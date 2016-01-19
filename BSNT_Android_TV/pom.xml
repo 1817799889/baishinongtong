@@ -8,13 +8,35 @@
   <name>BSNT_Android_TV Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+    <!-- servletjar包配置 -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>3.0-alpha-1</version>
+      
+    </dependency>
+    
+    <!-- jsonjar包配置 -->
+  
+   <dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.3</version>
+			<classifier>jdk15</classifier>
+   </dependency>
+    
+ </dependencies>
+  <!-- 编码格式配置 -->
+  <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <build>
     <finalName>BSNT_Android_TV</finalName>
   </build>
